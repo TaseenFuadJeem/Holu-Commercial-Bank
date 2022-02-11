@@ -31,15 +31,42 @@
             <p class="text-center bg-blue-700 p-2 rounded">BDT : <span id="available-amount">1000</span></p>
         </div>
         <div class="bg-blue-500 p-24 text-white rounded-md shadow-2xl">
-            <h3 class="text-center text-md font-medium my-2">Deposit</h3>
-            <p class="text-center bg-blue-700 p-2 rounded">BDT : <span id="Deposit">00</span></p>
+            <h3 class="text-center text-md font-medium my-2">Total Deposit</h3>
+            <p class="text-center bg-blue-700 p-2 rounded">BDT : <span id="Total-Deposit">00</span></p>
         </div>
         <div class="bg-blue-500 p-24 text-white rounded-md shadow-2xl">
-            <h3 class="text-center text-md font-medium my-2">Withdraw</h3>
-            <p class="text-center bg-blue-700 p-2 rounded">BDT : <span id="Withdraw">00</span></p>
+            <h3 class="text-center text-md font-medium my-2">Total Withdraw</h3>
+            <p class="text-center bg-blue-700 p-2 rounded">BDT : <span id="Total-Withdraw">00</span></p>
         </div>
     </div>
+
     <hr>
+
+    <h1 class="text-5xl text-center my-20"><span class="font-semibold text-blue-500">Withdraw</span> and <span
+            class="font-semibold text-blue-500">Deposit</span></h1>
+
+    <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-14 my-24">
+        <div class="bg-blue-500 p-9 text-white rounded-md shadow-2xl">
+            <h3 class="text-center text-xl font-bold my-6">Deposit</h3>
+            <input type="number" name="" id="Deposit-input"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Please enter your amount">
+            <div class="flex justify-center">
+                <button id="deposit-button"
+                    class="p-2 bg-blue-400 hover:bg-blue-700 mt-6 rounded-md text-center">Deposit</button>
+            </div>
+        </div>
+        <div class="bg-blue-500 p-9 text-white rounded-md shadow-2xl">
+            <h3 class="text-center text-xl font-bold my-6">Withdraw</h3>
+            <input type="number" name="" id="withdraw-input"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Please enter your amount">
+            <div class="flex justify-center">
+                <button id="withdraw-button"
+                    class="p-2 bg-blue-400 hover:bg-blue-700 mt-6 rounded-md text-center">Withdraw</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
