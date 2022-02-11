@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCB Online Portal</title>
+    <!-- ------------favicon----------- -->
+    <link rel="shortcut icon"
+        href="https://image.shutterstock.com/image-vector/bank-building-isolated-on-white-260nw-749071768.jpg"
+        type="image/x-icon">
+    <!-- -----------tailwind css--------- -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100 m-0">
+    <header class="w-3/4 mx-auto">
+        <h1 class="text-5xl text-center mt-20 mb-10">Welcome to <span class="font-semibold text-blue-500">Holu
+                Commercial
+                Bank</span></h1>
+    </header>
+
+    <!-- ----------------form------------- -->
+    <section class="lg:px-24 mb-20 pl-5 pr-5">
+        <!-------------------log in form------------------>
+        <div class="w-full md:w-1/2 flex flex-col mx-auto bg-white rounded-xl shadow-2xl">
+
+
+
+            <div
+                class="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-20 lg:py-10">
+
+                <form class="flex flex-col pt-3 md:pt-8" onsubmit="event.preventDefault();">
+                    <div class="flex flex-col pt-4">
+                        <label for="email" class="text-lg">Email</label>
+                        <input type="email" id="email-input" placeholder="your@email.com"
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+
+                    <div class="flex flex-col pt-4">
+                        <label for="password" class="text-lg">Password</label>
+                        <input type="password" id="password-input" placeholder="Password"
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+
+                    <button id="login-button"
+                        class="bg-blue-500 text-white font-bold text-lg hover:bg-blue-700 p-2 mt-8 rounded-md ">
+                        Log In
+                    </button>
+                </form>
+                <div class="text-center pt-12 pb-12">
+                    <p>Don't have an account? <a href="#" class="underline font-semibold text-blue-500">Register
+                            here.</a></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="JS/login-form.js"></script>
+</body>
+
+</html>
