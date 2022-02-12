@@ -6,13 +6,19 @@ function deposit() {
     // brought the text of total available balance
     let availableBalance = document.getElementById('available-amount');
 
-    // total amount of deposit
-    totalDepositOutput.innerText = parseFloat(totalDepositOutput.innerText) + parseFloat(depositValue.value);
-    // update the available balance
-    availableBalance.innerText = parseFloat(depositValue.value) + parseFloat(availableBalance.innerText);
+    if (depositValue.value > 0) {
+        // total amount of deposit
+        totalDepositOutput.innerText = parseFloat(totalDepositOutput.innerText) + parseFloat(depositValue.value);
+        // update the available balance
+        availableBalance.innerText = parseFloat(depositValue.value) + parseFloat(availableBalance.innerText);
+    }
+    else {
+        alert('Please enter a positive number')
+    }
+
     // empty the deposit value
     depositValue.value = '';
-}
+};
 
 function withdraw() {
     // brought the input value of withdraw input section.
@@ -22,11 +28,16 @@ function withdraw() {
     // brought the text of total available balance
     let availableBalance = document.getElementById('available-amount');
 
-    // total amount of withdraw
-    totalWithdrawOutput.innerText = parseFloat(totalWithdrawOutput.innerText) + parseFloat(withdrawValue.value);
-    // update the available balance
-    availableBalance.innerText = parseFloat(availableBalance.innerText) - parseFloat(withdrawValue.value);
+    if (withdrawValue.value > 0) {
+        // total amount of withdraw
+        totalWithdrawOutput.innerText = parseFloat(totalWithdrawOutput.innerText) + parseFloat(withdrawValue.value);
+        // update the available balance
+        availableBalance.innerText = parseFloat(availableBalance.innerText) - parseFloat(withdrawValue.value);
+    }
+    else {
+        alert('Please enter a positive number')
+    }
+
     // empty the withdraw value
     withdrawValue.value = '';
-
-}
+};
