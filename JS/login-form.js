@@ -8,4 +8,7 @@ document.getElementById('login-button').addEventListener('click', function () {
     if (emailValue == 'mdtaseenfuad@gmail.com' && passwordValue == 'holu-lulu') {
         window.location.href = 'banking-cal.html'
     }
+    else {
+        alert('Please check your email or password and try again')
+    }
 })
